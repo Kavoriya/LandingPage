@@ -1,6 +1,25 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0 auto;
+  width: 100%;
+  padding: 0 auto;
+}
+
+header, .part-1, .part-2, .part-3, .part-4{
   width: 900px;
+  margin: 0 auto;
+}
+
+.dark-background, footer {
+  background-color: #1F2937;
+}
+
+.grey-background {
+  background-color: #E5E7EB;
 }
 
 header {
@@ -27,14 +46,14 @@ header {
 }
 
 .part-1 {
-  background-color: #1F2937;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
-.part-1:first-of-type {
-  width: 900px;
+.part-1 > div {
+  width: 400px;
 }
 
 h1 {
@@ -46,3 +65,116 @@ h1 {
   color:#E5E7EB;
   font-size: 18px;
 }
+
+.part-1-button {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: #3883F6;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+.part-1-img {
+  width: 400px; 
+  height: 200px;
+  border-radius: 8%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1F2937;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.part-2-img {
+  width: 140px;
+  height: 140px;
+  border: 5px solid #3883F6;
+  border-radius: 8%;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.part-3 {
+  padding: 30px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.quote {
+  font-size: 36px; 
+  font-style: italic;
+  color: #1F2937;
+}
+
+.quote-author {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.banner {
+  background-color: #3883F6;
+  width: 700px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.banner-left-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.part-4-button {
+  padding: 15px 30px;
+  background-color: #3883F6;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.banner-first-p {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+.banner-second-p {
+  color:#E5E7EB;
+  font-size: 18px;
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color:#E5E7EB;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
